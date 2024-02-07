@@ -1,0 +1,32 @@
+.divider {
+  height: 100%;
+  width: 1px;
+  background: var(--red-to-pink-to-purple-vertical-gradient);
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 690px) {
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: var(--red-to-pink-to-purple-horizontal-gradient);
+    margin: 0.5rem 0;
+    margin-block: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 691px) and (max-width: 820px) {
+  .divider {
+    height: 1px;
+    width: 100%;
+    background: var(--red-to-pink-to-purple-horizontal-gradient);
+    margin: 0.5rem 0;
+    margin-block: 1.5rem;
+  }
+}
+
+.horizontal {
+  height: 1px !important;
+  width: 100% !important;
+  margin: 0.5rem 0 !important;
+}

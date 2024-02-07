@@ -1,0 +1,25 @@
+<divider [horizont]="true" class="w-100"></divider>
+<div class="section">
+  <div class="section-name">
+    <div class="title w-100">
+      <div>{{ section.title }}</div>
+    </div>
+  </div>
+
+  <div class="section-content">
+    <div class="topic" *ngFor="let topic of section.topics">
+      <div class="topic-header">
+        <div class="topic-title">{{ topic.title }}</div>
+        <div class="topic-date">{{getFormattedDate(topic.date)}}</div>
+      </div>
+      <div class="topic-description">
+        <div class="topic-role">{{ topic.role }}</div>
+        <div class="topic-location">{{ topic.city }}, {{topic.state}}</div>
+      </div>
+      <div class="topic-content">
+        <ul *ngFor="let bulletPoint of topic.bulletPoints">
+          <li class="bulletPoint">{{ bulletPoint }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>

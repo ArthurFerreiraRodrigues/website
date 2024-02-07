@@ -1,0 +1,48 @@
+.section {
+  width: 100%;
+}
+
+.section-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 2.125rem;
+  color: var(--gray-900);
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.125rem;
+  margin: 0;
+  font-family:
+    "Inter Tight",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+
+  border-width: 1px;
+  border-style: solid;
+  border-image: var(--red-to-pink-to-purple-horizontal-gradient) 0 1 100%;
+}
+
+divider {
+  align-self: flex-end;
+}
+
+.topic {
+  margin-top: 8px;
+}
+
+.topic-header,
+.topic-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
